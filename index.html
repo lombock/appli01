@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>jQuery Mobile</title> 
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1"> 
+		<link rel="stylesheet" href="http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.css">
+		<script src="http://code.jquery.com/jquery-1.8.2.min.js"></script>
+		<script src="http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.js"></script>
+		
+	</head>
+	<style>
+		img{
+			max-width: 100%; 	
+		}
+	</style>
+<body>
+	<div data-role="page" id="accueil" data-theme="c">
+
+		<div data-role="header">
+		<h1>Honda cb500F</h1>
+			<div data-role="navbar">
+				<ul>
+					<li><a href="#page1" class="ui-btn-active" >page 1</a></li>
+					<li><a href="#page2">page 2</a></li>
+					<li><a href="#page3" >Page 3</a></li>
+				</ul>
+			</div>
+		</div><!-- fin de data-role="header" -->
+		
+		<div data-role="content"> 
+			<p>Issue d’une plateforme commune de 500 cm3, Honda décline 3 modèles qui partagent cadre et motorisation. La CB500F, au look d’Hornet, est une authentique moyenne cylindrée, performante, agile et fun.
+
+			<p>Idéale pour débuter en moto, elle fait figure de “première grosse moto” et s’adresse à tous ceux qui souhaitent faire le pas dans l’univers moto après une expérience en 125 cm3 ou pour les futurs détenteurs du nouveau permis A2.</p>
+			<p><a href="http://jquerymobile.com/" data-rel="external" data-ajax="false">Jquerymobile</a></p>
+			<p><a href="http://www.tomsyweb.com/component/content/article/48-css/101-les-30-selecteurs-css-a-connaitre" data-rel="external" data-ajax="false">30 selecteurs CSS</a><p>
+			<p>Cognitis enim pilatorum caesorumque funeribus nemo deinde ad has stationes appulit navem, sed ut Scironis praerupta letalia declinantes litoribus Cypriis contigui navigabant, quae Isauriae scopulis sunt controversa. Ut enim benefici liberalesque sumus, non ut exigamus gratiam (neque enim beneficium faeneramur sed natura propensi ad liberalitatem sumus), sic amicitiam non spe mercedis adducti sed quod omnis eius fructus in ipso amore inest, expetendam putamus.</p>
+			
+		</div><!-- fin de data-role="content" -->
+		
+		<div data-role="footer" data-position="fixed">
+			<h4>Footer</h4>
+		</div><!-- fin de data-role="footer" -->
+	</div><!-- fin de data-role="page" -->
+	
+	<div data-role="page" id="page1" data-add-back-btn="true" data-back-btn-text="Retour">
+		<div data-role="header">
+		<h1>Financements</h1>
+		<a href="#page2" class="ui-btn-right">Page 2</a>
+		
+		</div><!-- fin de data-role="header" -->
+		
+		<div data-role="content"> 
+		
+		<img src='cb500f.jpg' />
+		<p>Pour l’achat d’une CB500F ABS au prix de vente de 5 590 €, après un apport obligatoire de 20% € soit 1 118 €, en crédit accessoire à une vente de 4 472 € avec une 1ère échéance à 60 joursux mensualités ci dessus. </p>
+		</div><!-- fin de data-role="content" -->
+		
+		<div data-role="footer" data-position="fixed">
+		<h4><a href="#accueil" data-role="button" data-inline="true">Accueil</a></h4>
+		</div><!-- fin de data-role="footer" -->
+	</div><!-- fin de data-role="page" -->
+	
+	<div data-role="page" id="page2" data-add-back-btn="true" data-back-btn-text="Retour">
+		<div data-role="header">
+		<h1>Page 2</h1>
+		<a href="#page3" class="ui-btn-right">Page 3</a>
+		</div><!-- fin de data-role="header" -->
+		
+		<div data-role="content"> 
+		<h1>Page 2</h1>
+		<img src='cb500f2.jpg' />
+		<p>Esthétiquement inspirée par la Hornet, la CB500F est une machine dont la finesse s’avère précieuse en ville et les performances excitantes sur route.</p>
+		<img src='cb500f3.jpg' />
+		    
+		</div><!-- fin de data-role="content" -->
+		
+		<div data-role="footer" data-position="fixed">
+		<h4><a href="#accueil" data-role="button" data-inline="true">Accueil</a></h4>
+		</div><!-- fin de data-role="footer" -->
+	
+	</div><!-- fin de data-role="page" -->
+	
+	<div data-role="page" id="page3" data-add-back-btn="true" data-back-btn-text="Retour">
+		<div data-role="header">
+			<h1>Page 3</h1>
+			
+		</div>
+		<div data-role="content">
+		<p>Cognitis enim pilatorum caesorumque funeribus nemo deinde ad has stationes appulit navem, sed ut Scironis praerupta letalia declinantes litoribus Cypriis contigui navigabant, quae Isauriae scopulis sunt controversa. Ut enim benefici liberalesque sumus, non ut exigamus gratiam (neque enim beneficium faeneramur sed natura propensi ad liberalitatem sumus), sic amicitiam non spe mercedis adducti sed quod omnis eius fructus in ipso amore inest, expetendam putamus.</p>
+		<p><a href="#confirmation" data-role="button" data-corners="false" data-inline="true" data-shadow="false" data-rel="dialog">Comparatif</a>
+		<a href="http://moto.honda.fr/honda_CB500F_103.html" data-role="button" data-corners="false" data-inline="true" data-shadow="false">Honda France</a></p>    
+		<p><a href="http://news.moto-journal.fr/essai-honda-cb-500-f-2013" data-role="button">Essai moto journal</a></p>
+		
+			
+			<form action="#" method="post">
+				<div data-role="fieldcontain">
+					<label>Votre nom :</label>
+					<input type="text" name="nom1" id="nom1"/>
+				</div>
+				<div data-role="fieldcontain">
+					<label>Votre prenom :</label>
+					<input type="text" name="prenom" id="prenom1"/>
+				
+				<div data-role="fieldcontain">
+					<select name="selection1" id="selection1"/>
+					<option value="Rouge">Rouge</option>
+					<option value="Bleu">Bleu</option>
+					<option value="Jaune">Jaune</option>
+					<option value="Vert">Vert</option>
+				</div>
+				</div>
+					<div data-role="fieldcontain">
+					<input type="submit" value="Envoyer" data-icon="alert" data-iconpos="right"/>
+				</div>
+			</form>
+			
+		
+		</div>
+		
+		<div data-role="footer" data-position="fixed">
+		<h4><a href="#accueil" data-role="button" data-inline="true">Accueil</a></h4>
+		</div>
+	</div><!-- fin de data role ="page" 3 -->
+	
+	<div data-role="page" id="confirmation">
+		<div data-role="header">
+		<h1>Confirmation</h1>
+		</div>
+		
+		<div data-role="content">
+			<h2>Aller sur ce lien</h2>
+			<p>Voulez-vous allez sur cette page?</p>
+			<p><a href="http://www.moto-net.com/essais-motos-5422-HONDA|KAWASAKI|YAMAHA-CB500F|ER-6N|XJ6-CB500F,-ER-6n-ou-XJ6-:-quelle-moto-A2-choisir-.html" data-role="button" data-rel="dialog">Oui</a></p>
+			<p><a href="#accueil" data-role="button" data-rel="dialog">Retour accueil</a></p>
+			<p><a href="#suppression" data-role="button" data-rel="back">Supprimer</a></p>
+			
+		
+	</div>
+	
+	
+	
+	
+</body>
+</html>
